@@ -45,8 +45,6 @@ Projetos como análise de sentimento PLN, criação de API twitter nesse projeto
 
 ## Stack utilizada
 
-**Front-end:** React, Redux, TailwindCSS
-
 **Programação** Python
 
 **Machine learning**: Scikit-learn
