@@ -39,6 +39,8 @@ Projetos como análise de sentimento PLN, criação de API twitter nesse projeto
 - Análise de sentimento com a base tweets
 - Análise de sentimento tweets da companhia United airlines
 - Análise de sentimento frases com TextBlob
+- Análise de sentimento tweets da vacina AstraZeneca
+- Análise de sentimento avaliações aplicativos da Google play store
 
 
 ## Stack utilizada
