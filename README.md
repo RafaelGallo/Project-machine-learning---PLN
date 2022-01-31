@@ -107,64 +107,131 @@ Agora que temos nosso ambiente Python todo configurado, podemos começar a traba
 jupyter notebook
 ```
     
-## Demo modelo PLN - Análise de sentimento 
+## Demo Modelo PLN  
 
-```bash
-  # Carregando as bibliotecas 
-  import pandas as pd
-  import seaborn as sns
-  import matplotlib.pyplot as plt
+```
+# Importação das bibliotecas de nlp
 
-  # Carregando o dataset
-  data = pd.read_csv("data.csv")
-  
-  # Visualizando os 5 primeiros itens
-  data.head()
+import nltk
+import string
+import re
+import warnings
 
-  # visualizando linhas e colunas com shape
-  data.shape
+nltk.download('stopwords')
+nltk.download('punkt')
 
-  # Informações das variaveis
-  data.info()
+stopwords = nltk.corpus.stopwords.words("english") + list(string.punctuation)
+stopwords
 
-  # Treino e teste da base de dados para x e y
-  x = df_train.iloc[:, 0: 10]
-  y = df_train.iloc[:, 10]
+# Pre-processamento
+numerical = []
 
-  # Visualizando o shape da variavel x
-  x.shape
+for i in df.columns:
+    if df[i].dtype != 'object':
+        numerical.append(i)
+        
+def data_pre(data):
+    df['Numero_words'] = df['Text'].apply(lambda x : len([x for x in x.split()]))
+    df['Numero_stopwords'] = df['Text'].apply(lambda x : len([x for x in x.lower().split() if x in stopwords]))
+    df['Numero_special_char'] = df['Text'].apply(lambda x : len([x for x in x.split() if x in '[\w\s]']))
+    df['Numero_chars'] = df['Text'].apply(lambda x : len(''.join([x for x in x.split()])))
+    df['Text'] = df['Text'].apply(lambda x : x.lower())
+    df['Text'] = df['Text'].str.replace('[^\w\s]','')
+    df['Text'] = df['Text'].apply(lambda x : ' '.join(x for x in x.split() if x not in stopwords))
+    df['Text'] = df['Text'].apply(lambda x : ' '.join(x for x in x.split() if x.isdigit()==False))
 
-  # Visualizando o shape da variavel y
-  y.shape
+    return data
+df.head()
 
-  # Treinando modelo de machine learning
-  from sklearn.model_selection import train_test_split
-  x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.3, random_state = 0)
+# Stemmer
+from nltk.stem import PorterStemmer
 
-  # Visualizando linhas e colunas do dado de treino x_train
-  x_train.shape
+PORTER_STEMMER = PorterStemmer()
+df['Text'] = df['Text'].apply(lambda x : ' '.join(PORTER_STEMMER.stem(x) for x in x.split()))
+most_common = nltk.FreqDist(' '.join(df['Text']).split()).most_common(2000)
+print(most_common)
 
-  # Visualizando linhas e colunas do dado de treino y_train
-  y_train.shape
+# Treino e teste
+processed_features = df['Text']
+labels = df['Sentimento']
 
-  # Modelo AutoML - AutoKeras
-  # Modelo classificação com autokeras
 
-  # Importando a biblioteca 
-  import autokeras as ak
-  
-  # Modelo de classificação - max_trials tempo que vai ser treinado
-  model = ak.StructuredDataClassifier(max_trials = 10)
-  
-  # Modelo vai treino - epochs sera as epocas do modelo
-  model_fit = model.fit(x = x_train, y = y_train, epochs = 100)
-  
-  # Valição do modelo foi preparado
-  model_automl_eval = model.evaluate(x = x_test, y = y_test)
+# Dados de limpeza para modelo PLN
+# Remove stop words: Removendo as stop words na base de dados
 
-  # Previsão do modelo
-  predict = model.predict(model_predict)
-  predict
+# Text stemming: Palavras derivacionalmente relacionadas com significados semelhantes, palavras para retornar documentos que contenham outra palavra no conjunto.
+# Dados limpos: Limpeza na base de dados limpando dados de web com http e outros.
+# Lemmatization: Em linguística é o processo de agrupar as formas flexionadas de uma palavra para que possam ser analisadas como um único item, identificado pelo lema da palavra , ou forma de dicionário.
+# Preprocessing: Pré - processamento da base de dados que serão ser para análise de dados.
+
+from nltk.stem import WordNetLemmatizer
+wordnet_lemmatizer = WordNetLemmatizer()
+
+def remove_stop_words(instancia):
+    stopwords = set(nltk.corpus.stopwords.words("english"))
+    palavras = [i for i in instancia.split() if not i in stopwords]
+    return (" ".join(palavras))
+
+def dados_limpos(instancia):
+    instancia = re.sub(r"http\S+", "", instancia).lower().replace('.','').replace(';','').replace('-','').replace(':','').replace(')','')
+    return (instancia)
+
+
+# Vectorizer NLP
+# fidfVectorizer: Converta uma coleção de documentos brutos em uma matriz de recursos do TF-IDF.
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+vectorizer_TFIDF = TfidfVectorizer(max_features=2500, min_df=7, max_df=0.8)
+vectorizer_TFIDF_features = vectorizer_TFIDF.fit_transform(processed_features).toarray()
+vectorizer_TFIDF_features
+
+# Tokenização as palavras precisam ser codificadas como inteiros, 
+# ou valores de ponto flutuante, para serem usadas como entradas para modelos machine learning.
+
+from sklearn.feature_extraction.text import CountVectorizer
+
+vetor = CountVectorizer(analyzer = "word", tokenizer = tweet_tokenizer.tokenize)
+vetor_train = vetor.fit_transform(processed_features)
+vetor_train.shape
+
+# Modelo machine learning
+# Modelo de regressão logistica 
+from sklearn.linear_model import LogisticRegression
+
+modelo_regression_logistic = LogisticRegression()
+modelo_regression_logistic_fit = modelo_regression_logistic.fit(vetor_train, labels)
+modelo_regression_logistic_score = modelo_regression_logistic.score(vetor_train, labels)
+
+print("Model - Logistic Regression: %.2f" % (modelo_regression_logistic_score * 100))
+
+# Previsão modelo com função predict de previsã das frases
+modelo_regression_logistic_pred = modelo_regression_logistic.predict(vetor_train)
+modelo_regression_logistic_pred
+
+# Classification report
+from sklearn.metrics import classification_report,confusion_matrix
+print(classification_report(labels, modelo_regression_logistic_pred))
+
+# Accuracy do modelo
+from sklearn import metrics
+accuracy_regressao_logistica = metrics.accuracy_score(labels, modelo_regression_logistic_pred)
+print("Accuracy model Logistic Regression: %.2f" % (accuracy_regressao_logistica * 100))
+
+# Confusion matrix
+matrix_1 = confusion_matrix(labels, modelo_regression_logistic_pred)
+
+x = ["Negativo", "Neutro", "Positivo"]
+y = ['Negativo', "Neutro", "Positivo"]
+
+matrix = pd.DataFrame(matrix_1, columns=np.unique(y), index = np.unique(x))
+matrix.index.name = 'Actual'
+matrix.columns.name = 'Predicted'
+
+plt.figure(figsize = (10,7))
+sns.set(font_scale=1.4)
+plt.title("Matrix confusion - Logistic Regression")
+matrix = sns.heatmap(matrix, cmap = 'Paired', annot=True, annot_kws = {"size": 20}, fmt = "")
+}
 ```
 
 ## Dataset
