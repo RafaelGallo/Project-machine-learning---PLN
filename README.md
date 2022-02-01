@@ -55,6 +55,28 @@ Projetos como análise de sentimento PLN, criação de API twitter nesse projeto
 
 **Modelo machine learning - Processo de linguagem natural**: NLTK, TextBlob
 
+## Dataset
+
+| Dataset               | Link                                                |
+| ----------------- | ---------------------------------------------------------------- |
+| NLP - Model sentimental analysis - Climate Change|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Climate%20Change%20Sentiment/Model%20NLP%20-%20Climate%20Change%20Sentiment.ipynb)|
+| NLP - Covid K-MEANS|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Covid19/NLP%20K-Means%20Covid19.ipynb)|
+| NLP - Model sentimental analysis - Google Play Store|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Google%20Play%20Store/Model_NLP_analysis_sentiment_Google_store.ipynb)|
+| NLP - Model sentimental analysis - IMDB Filmes|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20IMDB%20Filmes/Modelo%20PLN%20Analisado%20de%20sentimento%20-%20PTBR%20-%201.ipynb)|
+|NLP - Model sentimental analysis - TextBlob|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20TextBlob/M.L%20NLP%20-%20Sentimental%20analysis%20TextBlob.ipynb)|
+|NLP - Model sentimental analysis - Trip Advisor Hotel|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Trip%20Advisor%20Hotel/NLP%20Model_Analysis_Sentiment.ipynb)|
+|NLP - Model sentimental analysis - Tweets sentiment 1.6 million|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Tweets%20sentiment%201.6%20million/PLN%20-%20tweets.ipynb)|
+|NLP - Model sentimental analysis - Tweets|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Tweets/PLN%20-%20tweets.ipynb)|
+|NLP - Model sentimental analysis - United Airlines|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20United%20Airlines/Model%20PLN%20-%20United%20airlines.ipynb)|
+| NLP - Model sentimental analysis - Vacina AstraZeneca | [Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/notebooks/NLP%20-%20AstraZeneca/Modelo%20NLP%20-%20An%C3%A1lise%20de%20sentimento%20-%20Vacina%20AstraZeneca.ipynb)|
+|NLP - Model sentimental analysis - Vacina Moderna|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Moderna/PLN%20Vaccine%20Moderna.ipynb)|
+|NLP - Model sentimental analysis - Vacina Pfizer|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Pfizer/PLN%20-%20Model%20Pfizer.ipynb)|
+|Coronavirus Covid 19 tweets|(https://www.kaggle.com/datatattle/coronavirus-tweets)|
+|NLP - Research Articles|(https://www.kaggle.com/blessondensil294/topic-modeling-for-research-articles)|
+|Amazon Product Reviews|https://www.kaggle.com/yasserh/amazon-product-reviews-dataset|
+|Twitter US Airline Sentiment|https://www.kaggle.com/crowdflower/twitter-airline-sentiment|
+
+
 
 ## Variáveis de Ambiente
 
@@ -106,7 +128,7 @@ Agora que temos nosso ambiente Python todo configurado, podemos começar a traba
 ```bash
 jupyter notebook
 ```
-    
+
 ## Demo Modelo PLN  
 
 ```
@@ -233,16 +255,6 @@ plt.title("Matrix confusion - Logistic Regression")
 matrix = sns.heatmap(matrix, cmap = 'Paired', annot=True, annot_kws = {"size": 20}, fmt = "")
 }
 ```
-
-## Dataset
-
-| Dataset               | Link                                                |
-| ----------------- | ---------------------------------------------------------------- |
-|       |  |
-|       |  |
-|       |  |
-|       |  |
-
 
 ## Melhorias
 
