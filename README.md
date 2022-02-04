@@ -71,7 +71,9 @@ Projetos como análise de sentimento PLN, criação de API twitter nesse projeto
 | NLP - Model sentimental analysis - Vacina AstraZeneca | [Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/notebooks/NLP%20-%20AstraZeneca/Modelo%20NLP%20-%20An%C3%A1lise%20de%20sentimento%20-%20Vacina%20AstraZeneca.ipynb)|
 |NLP - Model sentimental analysis - Vacina Moderna|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Moderna/PLN%20Vaccine%20Moderna.ipynb)|
 |NLP - Model sentimental analysis - Vacina Pfizer|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Pfizer/PLN%20-%20Model%20Pfizer.ipynb)|
-|Coronavirus Covid 19 tweets|(https://www.kaggle.com/datatattle/coronavirus-tweets)|
+|Coronavirus Covid 19 tweets|https://www.kaggle.com/datatattle/coronavirus-tweets|
+|COVID19 Fake News NLP|https://www.kaggle.com/elvinagammed/covid19-fake-news-dataset-nlp?select=Constraint_Train.csv|
+|Wikipedia Promotional Articles |https://www.kaggle.com/urbanbricks/wikipedia-promotional-articles/code|
 |NLP - Research Articles|(https://www.kaggle.com/blessondensil294/topic-modeling-for-research-articles)|
 |Amazon Product Reviews|https://www.kaggle.com/yasserh/amazon-product-reviews-dataset|
 |Twitter US Airline Sentiment|https://www.kaggle.com/crowdflower/twitter-airline-sentiment|
