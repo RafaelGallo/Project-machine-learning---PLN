@@ -30,7 +30,9 @@
 
 ## Projeto
 
-Projetos como análise de sentimento PLN, criação de API twitter nesse projeto foi criado projetos de estudo aplicar na área.
+Projetos voltados a processo de linguagem natrual.
+Modelos de análise de sentimentos aplicado dados do twitter, API, dados de e-commerce, marketing analytics, marketing digital. Objetivo fazer sentimentos das frases e tambem ser um produto está sendo mais avaliado loja virtual.
+Sentimento para sabe uma pessoa está gostando do produto x ou y.
 
 - **Projeto de Análise de sentimento**
 
