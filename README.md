@@ -59,23 +59,22 @@ Projetos como análise de sentimento PLN, criação de API twitter nesse projeto
 
 | Dataset               | Link                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| NLP - Model sentimental analysis - Climate Change|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Climate%20Change%20Sentiment/Model%20NLP%20-%20Climate%20Change%20Sentiment.ipynb)|
-| NLP - Covid K-MEANS|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Covid19/NLP%20K-Means%20Covid19.ipynb)|
-| NLP - Model sentimental analysis - Google Play Store|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Google%20Play%20Store/Model_NLP_analysis_sentiment_Google_store.ipynb)|
-| NLP - Model sentimental analysis - IMDB Filmes|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20IMDB%20Filmes/Modelo%20PLN%20Analisado%20de%20sentimento%20-%20PTBR%20-%201.ipynb)|
-|NLP - Model sentimental analysis - TextBlob|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20TextBlob/M.L%20NLP%20-%20Sentimental%20analysis%20TextBlob.ipynb)|
-|NLP - Model sentimental analysis - Trip Advisor Hotel|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Trip%20Advisor%20Hotel/NLP%20Model_Analysis_Sentiment.ipynb)|
-|NLP - Model sentimental analysis - Tweets sentiment 1.6 million|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Tweets%20sentiment%201.6%20million/PLN%20-%20tweets.ipynb)|
-|NLP - Model sentimental analysis - Tweets|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Tweets/PLN%20-%20tweets.ipynb)|
-|NLP - Model sentimental analysis - United Airlines|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20United%20Airlines/Model%20PLN%20-%20United%20airlines.ipynb)|
-| NLP - Model sentimental analysis - Vacina AstraZeneca | [Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/notebooks/NLP%20-%20AstraZeneca/Modelo%20NLP%20-%20An%C3%A1lise%20de%20sentimento%20-%20Vacina%20AstraZeneca.ipynb)|
-|NLP - Model sentimental analysis - Vacina Moderna|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Moderna/PLN%20Vaccine%20Moderna.ipynb)|
-|NLP - Model sentimental analysis - Vacina Pfizer|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Pfizer/PLN%20-%20Model%20Pfizer.ipynb)|
-|Twitter US Airline Sentiment|[Model](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20United%20Airlines/ML%20-%20Pipeline%20NLP.ipynb)|
-|Coronavirus Covid 19 tweets|https://www.kaggle.com/datatattle/coronavirus-tweets|
-|COVID19 Fake News NLP|https://www.kaggle.com/elvinagammed/covid19-fake-news-dataset-nlp?select=Constraint_Train.csv|
+| NLP - Model sentimental analysis - Climate Change|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Climate%20Change%20Sentiment/Model%20NLP%20-%20Climate%20Change%20Sentiment.ipynb)|
+| NLP - Covid K-MEANS|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Covid19/NLP%20K-Means%20Covid19.ipynb)|
+| NLP - Model sentimental analysis - Google Play Store|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Google%20Play%20Store/Model_NLP_analysis_sentiment_Google_store.ipynb)|
+| NLP - Model sentimental analysis - IMDB Filmes|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20IMDB%20Filmes/Modelo%20PLN%20Analisado%20de%20sentimento%20-%20PTBR%20-%201.ipynb)|
+|NLP - Model sentimental analysis - TextBlob|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20TextBlob/M.L%20NLP%20-%20Sentimental%20analysis%20TextBlob.ipynb)|
+|NLP - Model sentimental analysis - Trip Advisor Hotel|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Trip%20Advisor%20Hotel/NLP%20Model_Analysis_Sentiment.ipynb)|
+|NLP - Model sentimental analysis - Tweets sentiment 1.6 million|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Tweets%20sentiment%201.6%20million/PLN%20-%20tweets.ipynb)|
+|NLP - Model sentimental analysis - Tweets|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Tweets/PLN%20-%20tweets.ipynb)|
+|NLP - Model sentimental analysis - United Airlines|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20United%20Airlines/Model%20PLN%20-%20United%20airlines.ipynb)|
+| NLP - Model sentimental analysis - Vacina AstraZeneca | [Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/notebooks/NLP%20-%20AstraZeneca/Modelo%20NLP%20-%20An%C3%A1lise%20de%20sentimento%20-%20Vacina%20AstraZeneca.ipynb)|
+|NLP - Model sentimental analysis - Vacina Moderna|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Moderna/PLN%20Vaccine%20Moderna.ipynb)|
+|NLP - Model sentimental analysis - Vacina Pfizer|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Pfizer/PLN%20-%20Model%20Pfizer.ipynb)|
+|Twitter US Airline Sentiment|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20United%20Airlines/ML%20-%20Pipeline%20NLP.ipynb)|
+|COVID19 Fake News NLP|[Projeto - Notebook](https://github.com/RafaelGallo/Machine-learning---PLN-Fake-News/blob/main/notebooks/COVID19%20Fake%20News%20NLP/model_ML.ipynb)|
+|NLP - Research Articles - Covid19|[Projeto - Notebook]()|
 |Wikipedia Promotional Articles |https://www.kaggle.com/urbanbricks/wikipedia-promotional-articles/code|
-|NLP - Research Articles|(https://www.kaggle.com/blessondensil294/topic-modeling-for-research-articles)|
 |Amazon Product Reviews|https://www.kaggle.com/yasserh/amazon-product-reviews-dataset|
 
 
