@@ -1,0 +1,5 @@
+,Models,Acurácia
+1,Regression Logistic,0.9734583598219961
+0,K-NN,0.9725047679593134
+2,Decision tree,0.9723458359821996
+3,Gradient boosting,0.9693261284170375
