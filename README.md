@@ -75,7 +75,7 @@ Sentimento para sabe uma pessoa está gostando do produto x ou y.
 |NLP - Model sentimental analysis - Vacina Pfizer|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Vacina%20Pfizer/PLN%20-%20Model%20Pfizer.ipynb)|
 |Twitter US Airline Sentiment|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20United%20Airlines/ML%20-%20Pipeline%20NLP.ipynb)|
 |COVID19 Fake News NLP|[Projeto - Notebook](https://github.com/RafaelGallo/Machine-learning---PLN-Fake-News/blob/main/notebooks/COVID19%20Fake%20News%20NLP/model_ML.ipynb)|
-|NLP - Research Articles - Covid19|[Projeto - Notebook]()|
+|NLP - Research Articles - Covid19|[Projeto - Notebook](https://github.com/RafaelGallo/Project-machine-learning---PLN/blob/main/Jupyter%20Notebook/NLP%20-%20Research%20Articles%20Covid19/ML%20KMEANS%20artigos%20SaS-COV2%20-%20Covid19%20.ipynb)|
 |Wikipedia Promotional Articles |https://www.kaggle.com/urbanbricks/wikipedia-promotional-articles/code|
 |Amazon Product Reviews|https://www.kaggle.com/yasserh/amazon-product-reviews-dataset|
 
